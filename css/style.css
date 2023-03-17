@@ -2,8 +2,9 @@
 @import "/css/utilidades/tipografia.css";
 @import "/css/utilidades/cores.css";
 
-
+/* Global - header e footer */
 @import "/css/global/header.css";
+@import "/css/global/footer.css";
 
 
 /* utilidades */
