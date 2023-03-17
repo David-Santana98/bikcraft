@@ -31,7 +31,8 @@
 .bicicletas-conteudo {
     display: grid;
     grid-template-columns: 1fr auto;
-    align-items: start;
+  
+    
 }
 
 .bicicletas h2, 
@@ -44,5 +45,33 @@
 }
 
 .bicicletas h2::before {
-    margin-bottom: 20px;
+    content: "";
+    display: block;
+    width: 12px;
+    height: 8px;
+    background-color: var(--cor-p1);
+    margin-bottom: 8px;
+}
+
+.bicicletas p {
+    margin-bottom: 32px;
+}
+
+.bicicletas a {
+    place-self: end;
+}
+
+.bicicletas li {
+    display: flex;
+    align-items: center;
+}
+
+.bicicletas ul {
+    display: grid;
+    gap: 16px
+}
+
+.bicicletas-conteudo img  {
+    width: 24px;
+    margin-right: 8px;
 }
