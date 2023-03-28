@@ -35,7 +35,7 @@
   margin-bottom: 40px;
 }
 
-.bicicleta-comprar {
+.bicicleta-comprar a {
   grid-row: span 2;
 }
 
@@ -95,4 +95,6 @@
 
 /* RESPONSIVO */
 
-@media
+@media (max-width: 800px) {
+    
+}
