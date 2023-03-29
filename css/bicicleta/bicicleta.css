@@ -70,6 +70,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
+  
 }
 
 .bicicleta-informacoes img {
@@ -110,10 +111,12 @@
 }
 
 @media (max-width: 400px) {
-  .bicicleta-informacoes {
+  .bicicleta-informacoes  {
     grid-template-columns: 1fr;
+    
   }
   .bicicleta-comprar {
     grid-template-columns: 1fr;
+  
   }
 }
