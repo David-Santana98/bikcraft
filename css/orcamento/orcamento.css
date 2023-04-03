@@ -34,22 +34,36 @@
 .orcamento-produto {
     border-radius: 5px 0 0 5px;
     background: var(--cor-12);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-content: start;
 }
+
+.orcamento-produto > * {
+    grid-column:  1/-1;
+}
+
+.orcamento-produto > label {
+    grid-column: initial;
+}
+
+.orcamento-produto label {
+    color: var(--cor-4);
+    background-color: var(--cor-10);
+    display: block;
+    padding: 12px 16px;
+    border-radius: 4px;
+}
+
 .orcamento-dados {
     border-radius: 0 5px 5px 0;
     background: var(--cor-0);
 }
 
-.orcamento-produto label {
-    background: #ccc;
-    padding: 20px;
-    display: inline-block;
-}
 
-.orcamento-conteudo {
-    
-   
-}
+
+
 
 #bikcraft:checked ~ #orcamento-bikcraft, 
 #seguro:checked ~ #orcamento-seguro {
