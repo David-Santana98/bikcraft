@@ -56,6 +56,8 @@
     border-radius: 4px;
     cursor: pointer;
     display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
 }
 
 .orcamento-produto input:checked + label {
@@ -77,6 +79,14 @@
 .orcamento-produto input:checked + label::before {
     border-color: var(--cor-7);
     box-shadow: inset 0 0 0 3px var(--cor-0), inset 0 0 0 6px var(--cor-7);
+}
+
+.orcamento-produto label span {
+    display: none;
+}
+
+.orcamento-produto input:checked + label span {
+    display: inline-block ;
 }
 
 .orcamento-produto input {
