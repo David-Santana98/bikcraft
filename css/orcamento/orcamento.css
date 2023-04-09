@@ -58,6 +58,7 @@
     display: grid;
     grid-template-columns: auto 1fr auto;
     align-items: center;
+    border: 1px solid var(--cor-10);
 }
 
 .orcamento-produto input:checked + label {
@@ -83,6 +84,12 @@
 
 .orcamento-produto label:hover {
     background-color: var(--cor-9);
+    border-color: var(--cor-9);
+}
+.orcamento-produto input:focus + label {
+    box-shadow: 0 0 0 2px var(--cor-p1);
+    border-color: var(--cor-12)
+    
 }
 
 .orcamento-produto label span {
