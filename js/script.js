@@ -1,11 +1,14 @@
+// Ativar Links do Menu
 const links = document.querySelectorAll(".header-menu a");
 
 function ativarLink(link) {
-    const url = location.href;
-    const href = link.href;
-    if (url.includes(href)) {
-        link.classList.add("ativo");
-    }
+  const url = location.href;
+  const href = link.href;
+  if (url.includes(href)) {
+    link.classList.add("ativo");
+  }
 }
 
-links.forEach(ativarLink)
+links.forEach(ativarLink);
+
+// Ativar Ìtems do Orçamento
